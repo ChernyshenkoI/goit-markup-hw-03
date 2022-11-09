@@ -8,6 +8,7 @@ html{
     --bg-color: #FFFFFF;
     --dark-bg-color: #2F303A; 
     --light-bg-color: #F5F5F5;
+    --gray-bg-color:#F5F4FA
 
     --text-color: #212121;
     --light-text-color: #757575;
@@ -52,12 +53,10 @@ list-style: none;
  }
 
 body{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
     font-family: var(--main-font);
     line-height: 1.2;
     background-color: var(--bg-color);
+    margin: 0;
 }
 
  .list{
@@ -133,9 +132,16 @@ h2{
     font-weight: 500;
     font-size: 14px;
     color: var(--light-text-color);
-    margin-right:50px;margin-right: 40px;
-   
 }
+
+.main-contact:last-child{
+    margin-right: 0;
+  }
+
+  /* .main-contact:first-child{
+    margin-right: 50;
+  } */
+
 
 .menu-item:focus,
 .menu-item:hover,
@@ -149,11 +155,10 @@ h2{
 /* Main */
 
 .main-section {
-
     background-color: var(--dark-bg-color);
     text-align: center;
-    height: 600px;
     align-items: center;
+    padding: 200px 0;
 }
 
 .main-text {
@@ -162,10 +167,10 @@ h2{
     color: var(--accent-text-color);
     text-align: center;
     text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 30px;
-    padding-top: 200px;
-
+    margin: 0 auto;
+    /* margin-top: 0;
+    margin-bottom: 30px; */
+    width: 696px;
 }
 
 .main-button {
@@ -182,6 +187,7 @@ h2{
     text-align: center;
     border-radius: 4px;
     padding: 10px 32px;
+    margin-top: 50px;
     
 }
 
@@ -191,11 +197,12 @@ h2{
 }
 
 /* Advantages */  /* Advantages */ /* Advantages */
-
+.our-features{
+    padding-top: 94px;
+}
 .main-items{
     display: flex;
     justify-content: space-between;
-    margin: 45px auto;
 }
 
 .item-title {
@@ -213,6 +220,13 @@ h2{
 }
 
 /* Activities */
+
+.our-activities{
+    padding-bottom: 94px;
+    margin-top: 94px;
+    background-color: var(--light-bg-color);
+}
+
 .visually-hidden {
     position: absolute;
       white-space: nowrap;
@@ -231,19 +245,15 @@ h2{
     font-weight: 700;
     font-size: 36px;
     color: var(--text-color);
-    margin-top: 113px;
     margin-bottom: 50px;
 }
 .activities-list{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
+    gap: 30px;
 }
 .activity{
     height:294px;
     width:370px;
-    margin: 25px 10px;
 }
 
 /* Team */
@@ -251,24 +261,21 @@ h2{
 .team {
     background-color: var(--light-bg-color);
     margin-right: 30px;
+    padding-top: 94PX;
+    padding-bottom: 94PX;
 }
 .team-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 50px;
+    padding-top: 50px;
     margin-bottom: 94px;
 }
 
-
 .team-card {
-    background-color: var(--accent-text-color);
+    background-color:var(--gray-bg-color)
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 370px;
-    margin: 25px 10px;
+    padding: 25px 10px;
 }
 
 .card-title {
@@ -282,13 +289,18 @@ h2{
 .card-text {
     font-size: 16px;
     color: var(--light-text-color);
-    padding-top:10px ;
+margin-top:10px ;
 }
 
+.workers{
+padding: 30px 10px;
+
+}
 /* Footer */
 
 .footer {
     background-color: var(--dark-bg-color);
+    padding: 60px;
 }
 
 .studio-footer {
@@ -301,6 +313,9 @@ h2{
     line-height: 1.71;
     color: var(--accent-text-color);
     font-style: normal;
+}
+.footer-contact{
+    margin-top: 8px;
 }
 
 .footer-contact {
