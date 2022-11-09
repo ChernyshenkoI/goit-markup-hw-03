@@ -13,13 +13,15 @@ html{
     --text-color: #212121;
     --light-text-color: #757575;
     --accent-text-color:#FFFFFF;
-    --foter-text-color:rgba(255, 255, 255, 0.6);
+    --footer-text-color:rgba(255, 255, 255, 0.6);
    
 
     --accent-color: #2196F3;
     --active-color: #188CE8;
 
     --header-border-color: #ECECEC;
+
+    --border-color:rgba(238,238,238,1)
 }
 
 /* Утиліти / Reset */ 
@@ -95,13 +97,11 @@ body{
 .contact-list{
 display: flex;
 margin-left: auto;
-
 }
 
 h2{
     text-align: center;
 }
-
 
 .web {
     font-family: 'Raleway', sans-serif;
@@ -118,9 +118,13 @@ h2{
     display: flex;
     margin-left:93px;
     justify-content: space-between;
-    
-
+    margin-right: 40px;
 }
+.main-menu:last-child{
+    margin-right: 0;
+}
+
+
 .menu-item {
     font-weight: 500;
     font-size: 14px;
@@ -132,16 +136,12 @@ h2{
     font-weight: 500;
     font-size: 14px;
     color: var(--light-text-color);
+    margin-right: 50px;
+    
 }
-
-.main-contact:last-child{
-    margin-right: 0;
-  }
-
-  /* .main-contact:first-child{
-    margin-right: 50;
-  } */
-
+.main-contact:not(:last-child){
+    margin-right:0;
+}
 
 .menu-item:focus,
 .menu-item:hover,
@@ -319,7 +319,7 @@ padding: 30px 10px;
 }
 
 .footer-contact {
-    color: var(--foter-text-color);
+    color: var(--footer-text-color);
 }
 
 .footer-adress:hover,
@@ -341,8 +341,23 @@ address{
 }
 /* Portfolio */    /* Portfolio */   /* Portfolio */    /* Portfolio */
 
+.portfolio{
+padding-top: 94px;
+padding-bottom: 94px;
+}
+.examples{
+padding: 30px 10px;
+border-left: var(--border-color);
+border-bottom: var(--border-color);
+border-right: var(--border-color);
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .button {
-    
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 16px;
@@ -353,17 +368,16 @@ address{
     letter-spacing: 0.03em;
     border-radius: 4px;
     border: 0px;
-    margin: 5px 5px;
     padding: 5px 20px;
+    gap: 10px;
+    margin: 0 auto;
 
-
-   
 }
 .button-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 25px 10px;
+    margin-bottom: 34px;
 }
 
 .button:focus,
@@ -383,28 +397,27 @@ address{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    color: var(--text-color);
-    margin: 20px 24px;  
+    color: var(--text-color);  
     text-align: left;
 }
 
 .port-card-list{
 display: flex;
 flex-wrap: wrap;
-justify-content:space-between;
-padding-bottom: 100px;
+gap: 30px;
 }
 
 .port-card{
     width: 370px;
     height: 405px;
-    border: 1px solid var(--header-border-color);
-    margin-bottom: 30px
 }
 
 .port-text {
     font-size: 16px;
     line-height: 1.88;
     color: var(--light-text-color);
-    margin: 20px 24px;
+    margin-top: 4px;
+}
+a{
+    display: block;
 }
