@@ -111,7 +111,6 @@ h2{
     color:var(--logo-black-color)
 }
 .main-menu{
-    margin-right:93px;
     display: flex;
     margin-left:93px;
     justify-content: space-between;
@@ -220,6 +219,7 @@ h2{
     font-size: 14px;
     line-height: 1.71;
     color: var(--light-text-color);
+    margin-top: 10px;
     
 }
 
@@ -228,7 +228,7 @@ h2{
 .our-activities{
     padding-bottom: 94px;
     padding-top: 94px;
-    background-color: var(--light-bg-color);
+    background-color: var(--bg-color)
 }
 
 .visually-hidden {
@@ -303,7 +303,7 @@ text-align: center;
 
 .footer {
     background-color: var(--dark-bg-color);
-    padding: 60px;
+    padding: 60px 0;
 }
 
 .studio-footer {
@@ -317,7 +317,7 @@ text-align: center;
     color: var(--accent-text-color);
     font-style: normal;
 }
-.footer-adress-top{
+.footer-adress-top:not(:first-child){
     margin-top: 8px;
 }
 
