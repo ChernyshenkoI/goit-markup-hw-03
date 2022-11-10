@@ -11,6 +11,7 @@ html{
     --gray-bg-color:#F5F4FA
 
     --text-color: #212121;
+    --logo-black-color:#000000;
     --light-text-color: #757575;
     --accent-text-color:#FFFFFF;
     --footer-text-color:rgba(255, 255, 255, 0.6);
@@ -81,9 +82,7 @@ body{
     padding: 15px 0;
     margin: 0 20px;
     align-items: baseline;
-    background-color: red;
 }
-
 
 .header-main{
     display: flex;
@@ -111,37 +110,41 @@ h2{
 }
 
 .studio {
-    color: var(--text-color);
+    color:var(--logo-black-color)
 }
 .main-menu{
     margin-right:93px;
     display: flex;
     margin-left:93px;
     justify-content: space-between;
-    margin-right: 40px;
-}
-.main-menu:last-child{
-    margin-right: 0;
-}
-
-
-.menu-item {
-    font-weight: 500;
-    font-size: 14px;
-    color: var(--text-color);
-    margin-right: 40px;
 }
 
 .main-contact {
     font-weight: 500;
     font-size: 14px;
     color: var(--light-text-color);
-    margin-right: 50px;
-    
 }
-.main-contact:not(:last-child){
+
+.item-menu-header{
+    margin-right: 50px;
+}
+.item-menu-header:last-child{
     margin-right:0;
 }
+
+.menu-item {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.item-contact-info{
+    margin-right: 50px;
+}
+.item-contact-info:last-child{
+    margin-right: 0;
+}
+
 
 .menu-item:focus,
 .menu-item:hover,
@@ -152,6 +155,8 @@ h2{
 .current{
     color: var(--accent-color);
 }
+
+
 /* Main */
 
 .main-section {
@@ -188,6 +193,7 @@ h2{
     border-radius: 4px;
     padding: 10px 32px;
     margin-top: 50px;
+    border: none;
     
 }
 
@@ -202,7 +208,7 @@ h2{
 }
 .main-items{
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .item-title {
@@ -223,7 +229,7 @@ h2{
 
 .our-activities{
     padding-bottom: 94px;
-    margin-top: 94px;
+    padding-top: 94px;
     background-color: var(--light-bg-color);
 }
 
@@ -260,30 +266,28 @@ h2{
 
 .team {
     background-color: var(--light-bg-color);
-    margin-right: 30px;
-    padding-top: 94PX;
-    padding-bottom: 94PX;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .team-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 50px;
-    margin-bottom: 94px;
+    gap: 30px; 
 }
 
 .team-card {
-    background-color:var(--gray-bg-color)
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    padding: 25px 10px;
+    background-color:var(--gray-bg-color);
+    background: var(--accent-text-color);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 1px rgba(0,0,0,0.14), 0px 2px 1px rgba(0,0,0,0.2)                    ;
+    border-radius:0px 0px 4px 4px;
 }
+    
 
 .card-title {
     font-weight: 500;
     font-size: 16px;
     color: var(--text-color);
-    padding-top: 30px;
-
 }
 
 .card-text {
@@ -294,6 +298,7 @@ margin-top:10px ;
 
 .workers{
 padding: 30px 10px;
+text-align: center;
 
 }
 /* Footer */
@@ -314,7 +319,7 @@ padding: 30px 10px;
     color: var(--accent-text-color);
     font-style: normal;
 }
-.footer-contact{
+.footer-adress-top{
     margin-top: 8px;
 }
 
@@ -329,12 +334,8 @@ padding: 30px 10px;
     color: var(--accent-color);
 }
 
-.footer-list{
-   height: 252px; 
-}
 .logo-footer{
     display: block;
-    padding-top: 60px;
 }
 address{
     margin-top: 20px;
