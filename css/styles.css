@@ -345,10 +345,12 @@ padding-top: 94px;
 padding-bottom: 94px;
 }
 .examples{
-
 border-left: var(--border-color);
 border-bottom: var(--border-color);
 border-right: var(--border-color);
+padding: 20px 24px;
+text-align: left;
+
 }
 img{
     display: block;
@@ -398,9 +400,8 @@ img{
     font-size: 18px;
     line-height: 2;
     color: inherit;
-    text-align: left;
     color: var(--text-color);
-    padding: 20px 24px;
+    text-align: left;
 }
 
 .port-card-list{
