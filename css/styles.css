@@ -142,7 +142,6 @@ h2{
     margin-right: 0;
 }
 
-
 .menu-item:focus,
 .menu-item:hover,
 .main-contact:focus,
@@ -243,7 +242,6 @@ h2{
       clip-path: inset(50%);
       margin: -1px;
 }
-
 
 .subtitle {
     font-weight: 700;
