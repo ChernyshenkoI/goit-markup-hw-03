@@ -345,13 +345,13 @@ padding-top: 94px;
 padding-bottom: 94px;
 }
 .examples{
-border-left: var(--border-color);
-border-bottom: var(--border-color);
-border-right: var(--border-color);
+border-left: 1px solid var(--border-color);
+border-bottom:1px solid var(--border-color);
+border-right:1px solid var(--border-color);
 padding: 20px 24px;
 text-align: left;
-
 }
+
 img{
     display: block;
     max-width: 100%;
@@ -423,9 +423,4 @@ gap: 30px;
 }
 a{
     display: block;
-}
-.examples-content{
-border-left: 1px solid #EEEE;
-border-right: 1px solid #EEEE;
-border-bottom: 1px solid #EEEE;
 }
